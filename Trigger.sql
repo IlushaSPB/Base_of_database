@@ -18,9 +18,7 @@ create or replace trigger check_org_t
     before insert or update on award
     for each row
     execute function check_org();
-//
-//
-//
+
 create or replace function check_sport() returns trigger
     as
     $$
@@ -41,9 +39,7 @@ create or replace trigger check_sport_t
     before insert or update on result
     for each row
     execute function check_sport();
-//
-//
-//  
+ 
 create or replace function check_p() returns trigger
     as
     $$
@@ -63,9 +59,7 @@ create or replace trigger check_p_t
     before insert or update on type_track
     for each row
     execute function check_p();
-//
-//
-//   
+
     create or replace function check_s() returns trigger
     as
     $$
